@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS */
+@media screen and (max-width: 940px) and (orientation: landscape) {
+  .adjust-position {
+    transform: translateY(-10%); /* Adjust this value as needed */
+  }
+}
