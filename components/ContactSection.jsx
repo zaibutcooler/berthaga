@@ -35,8 +35,8 @@ const ContactSection = () => {
                   <h3 className="text-base font-medium text-indigo-500 mb-4">
                     For title two
                   </h3>
-                  {contactOneData.map((item) => (
-                    <div className="flex items-center mb-5">
+                  {contactOneData.map((item, index) => (
+                    <div className="flex items-center mb-5" key={index}>
                       <item.icon className="w-5 h-5 mr-6" />
                       <p href="#" className="mr-2">
                         {item.label}
@@ -56,8 +56,8 @@ const ContactSection = () => {
                   <h3 className="text-base font-medium text-indigo-500 mb-4">
                     For title one
                   </h3>
-                  {contactTwoData.map((item) => (
-                    <div className="flex items-center mb-5">
+                  {contactTwoData.map((item, index) => (
+                    <div className="flex items-center mb-5" key={index}>
                       <item.icon className="w-5 h-5 mr-6" />
                       <p href="#" className="mr-2">
                         {item.label}
