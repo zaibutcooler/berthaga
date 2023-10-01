@@ -31,6 +31,10 @@ const ContactForm = () => {
   };
 
   const handleSubmit = () => {
+    if (formData === initialFormData) {
+      return toast.error("Please Type in First!");
+    }
+
     console.log(formData);
     emailjs
       .send(
