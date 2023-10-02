@@ -1,4 +1,3 @@
-"use client";
 import GoogleMaps from "./GoogleMaps";
 
 const Location = () => {
