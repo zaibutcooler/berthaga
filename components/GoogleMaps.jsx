@@ -1,5 +1,6 @@
-import React from "react";
+"use client";
 
+import React from "react";
 import {
   GoogleMap as GoogleMaps,
   LoadScript,
@@ -12,7 +13,7 @@ const location = {
   lng: 17.6305953,
 };
 
-const apiKey = process.env.GOOGLE_MAPS_API_KEY;
+const apiKey = "AIzaSyAvtQtWZN0J95jjIwJ6VFahlpf7Cpn43do";
 
 const containerStyle = {
   width: "100%",
@@ -33,15 +34,16 @@ const GoogleMap = () => {
         center={location}
         zoom={17}
         options={{ draggable: false, mapId: "330578b92517eac7" }}>
-        <Marker
-          position={location}
-          icon={{
-            url: "/logo.png",
-            scaledSize: { width: 50, height: 50 },
-          }}
-          onClick={handleMarkerClick}
-          style={{ cursor: "pointer" }}
-        />
+        <button onClick={handleMarkerClick}>
+          <Marker
+            position={location}
+            icon={{
+              url: "/logo.png",
+              scaledSize: { width: 50, height: 50 },
+            }}
+            style={{ cursor: "pointer" }}
+          />
+        </button>
       </GoogleMaps>
     </LoadScript>
   );

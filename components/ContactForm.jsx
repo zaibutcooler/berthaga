@@ -59,17 +59,17 @@ const ContactForm = () => {
   return (
     <div className="h-full w-full border rounded-md p-6 md:p-8">
       <section>
-        <div class="mb-8 mt-1 md:mt-0">
-          <h1 class="text-2xl md:text-3xl font-bold text-super_black text-center">
+        <div className="mb-8 mt-1 md:mt-0">
+          <h1 className="text-2xl md:text-3xl font-bold text-super_black text-center">
             Get In Touch With Me
           </h1>
         </div>
 
-        <div class="mb-6 flex gap-4">
-          <div class="w-1/2">
+        <div className="mb-6 flex gap-4">
+          <div className="w-1/2">
             <label
-              class="block text-gray-700  text-sm font-bold mb-3"
-              for="firstName">
+              className="block text-gray-700  text-sm font-bold mb-3"
+              htmlFor="firstName">
               First Name
             </label>
             <input
@@ -78,14 +78,14 @@ const ContactForm = () => {
               id="firstName"
               onChange={handleChange}
               name="firstName"
-              class="px-3 py-2 border rounded w-full"
+              className="px-3 py-2 border rounded w-full"
               required
             />
           </div>
-          <div class="w-1/2">
+          <div className="w-1/2">
             <label
-              class="block text-gray-700  text-sm font-bold mb-3"
-              for="lastName">
+              className="block text-gray-700  text-sm font-bold mb-3"
+              htmlFor="lastName">
               Last Name
             </label>
             <input
@@ -94,16 +94,16 @@ const ContactForm = () => {
               value={formData.lastName}
               onChange={handleChange}
               name="lastName"
-              class="px-3 py-2 border rounded w-full"
+              className="px-3 py-2 border rounded w-full"
               required
             />
           </div>
         </div>
 
-        <div class="mb-6 w-full">
+        <div className="mb-6 w-full">
           <label
-            class="block text-gray-700  text-sm font-bold mb-3"
-            for="email">
+            className="block text-gray-700  text-sm font-bold mb-3"
+            htmlFor="email">
             Email
           </label>
           <input
@@ -112,14 +112,14 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleChange}
             name="email"
-            class="px-3 py-2 border rounded w-full"
+            className="px-3 py-2 border rounded w-full"
             required
           />
         </div>
-        <div class="mb-6 w-full">
+        <div className="mb-6 w-full">
           <label
-            class="block text-gray-700  text-sm font-bold mb-3"
-            for="email">
+            className="block text-gray-700  text-sm font-bold mb-3"
+            htmlFor="email">
             Phone Number
           </label>
           <input
@@ -128,14 +128,14 @@ const ContactForm = () => {
             value={formData.phoneNumber}
             onChange={handleChange}
             name="phoneNumber"
-            class="px-3 py-2 border rounded w-full"
+            className="px-3 py-2 border rounded w-full"
             required
           />
         </div>
-        <div class="mb-6 w-full flex-grow">
+        <div className="mb-6 w-full flex-grow">
           <label
-            class="block text-gray-700  text-sm font-bold mb-3"
-            for="message">
+            className="block text-gray-700  text-sm font-bold mb-3"
+            htmlFor="message">
             Message
           </label>
           <textarea
@@ -144,13 +144,13 @@ const ContactForm = () => {
             rows="4"
             value={formData.message}
             onChange={handleChange}
-            class="px-3 py-2 border rounded w-full h-full"
+            className="px-3 py-2 border rounded w-full h-full"
             required></textarea>
         </div>
-        <div class="w-full flex justify-end mt-8">
+        <div className="w-full flex justify-end mt-8">
           <button
             onClick={handleSubmit}
-            class="px-4 py-2 border border-transparent hover:text-indigo-500 hover:border-indigo-400 rounded-md transition-colors duration-500 ease-in-out">
+            className="px-4 py-2 border border-transparent hover:text-indigo-500 hover:border-indigo-400 rounded-md transition-colors duration-500 ease-in-out">
             Send Message
           </button>
         </div>
